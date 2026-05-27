@@ -1,0 +1,35 @@
+programa {
+  funcao inicio() {
+  
+  inteiro matricula
+  real nota
+  cadeia conceito
+
+
+  para(inteiro i=1; i<=75; i++){
+    escreva("\nDigite sua matricula: ")
+    leia(matricula)
+
+    escreva("\nDigite sua nota: ")
+    leia(nota)
+
+    se(nota >=0 e nota <= 4.9){
+      conceito="D"
+    }senao se(nota <= 6.9){
+      conceito="C"
+    }senao se(nota <= 8.9){
+      conceito="B"
+    }senao{
+      conceito="A"
+    }
+
+    escreva("\nmatricula: ", matricula)
+    escreva("\nnota é: ", nota)
+    escreva("\nconceito: ", conceito)
+    }
+  }
+
+
+    }
+  
+
