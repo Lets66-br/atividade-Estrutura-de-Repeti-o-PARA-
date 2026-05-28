@@ -1,15 +1,27 @@
 programa {
   funcao inicio() {
     inteiro idade, idademaior = 0
+    inteiro contagem_especial = 0
     cadeia sexo, olhos, cabelo
 
-    para(inteiro i=1; i<= 500; i++){
-      escreva("Qual o seu sexo M(masculino) ou F(feminino): ")
+    para(inteiro i = 1; i <= 500; i++){
+      escreva("\nQual o seu sexo M (masculino) / F (feminino): ")
       leia(sexo)
-      escreva("Qual a cor dos seus olhos? ")
+      escreva("Qual a cor dos olhos A (azuis) / V (verdes) / C (castanhos): ")
       leia(olhos)
-      
+      escreva("Qual a cor dos cabelos L (louros) / C (castanhos) / P (pretos): ")
+      leia(cabelo)
+      escreva("Qual a sua idade: ")
+      leia(idade)
 
+      se (idade > idademaior){
+        idademaior = idade
+      }
+      se (sexo == "F" e idade >= 18 e idade <= 35 e olhos == "V" e cabelo == "L"){
+        contagem_especial++
+      }
+      escreva("\nA maior idade do grupo é: ", idademaior)
+      escreva("\nQuantidade de mulheres (18-35 anos) com olhos verdes e cabelos louros: ", contagem_especial)
     }
   }
 }
