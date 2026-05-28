@@ -1,0 +1,15 @@
+programa {
+  funcao inicio() {
+    inteiro idade, idademaior = 0
+    cadeia sexo, olhos, cabelo
+
+    para(inteiro i=1; i<= 500; i++){
+      escreva("Qual o seu sexo M(masculino) ou F(feminino): ")
+      leia(sexo)
+      escreva("Qual a cor dos seus olhos? ")
+      leia(olhos)
+      
+
+    }
+  }
+}
